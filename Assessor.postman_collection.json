@@ -1,0 +1,985 @@
+{
+	"info": {
+		"_postman_id": "88bf5a77-0c85-4dda-9c1a-cacfc0842db7",
+		"name": "Assessor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26946831",
+		"_collection_link": "https://lunar-equinox-157567.postman.co/workspace/My-Workspace~b48e63d2-bba9-4fc8-8fac-22b3000ab3a3/collection/26946831-88bf5a77-0c85-4dda-9c1a-cacfc0842db7?action=share&source=collection_link&creator=26946831"
+	},
+	"item": [
+		{
+			"name": "getOTP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mobile\":\"8447005130\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/send-assesorOTP",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"send-assesorOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoginByOTP",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"mobile\":\"8447005130\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/send-assesorOTP",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"send-assesorOTP"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ProfileAss",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"a43-aM0kdmVH4YyNqUjmLuq6WapQQKA\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1MjU1MDQ5OCwiZXhwIjoxNzUyNjM2ODk4fQ.6MLeGiMWhpYYOTOKFGW3d8wm6jHt51nvmwqoonbvplA"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/batch-req-list?accessorId=67483e240003919c6dbf5e1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"batch-req-list"
+					],
+					"query": [
+						{
+							"key": "accessorId",
+							"value": "67483e240003919c6dbf5e1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Batchreq",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"a43-aM0kdmVH4YyNqUjmLuq6WapQQKA\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1MjU1MDQ5OCwiZXhwIjoxNzUyNjM2ODk4fQ.6MLeGiMWhpYYOTOKFGW3d8wm6jHt51nvmwqoonbvplA"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/batch-req-list?accessorId=67483e240003919c6dbf5e1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"batch-req-list"
+					],
+					"query": [
+						{
+							"key": "accessorId",
+							"value": "67483e240003919c6dbf5e1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "batch req",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"a43-aM0kdmVH4YyNqUjmLuq6WapQQKA\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1MjU1MDQ5OCwiZXhwIjoxNzUyNjM2ODk4fQ.6MLeGiMWhpYYOTOKFGW3d8wm6jHt51nvmwqoonbvplA"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/batch-req-list?accessorId=67483e240003919c6dbf5e1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"batch-req-list"
+					],
+					"query": [
+						{
+							"key": "accessorId",
+							"value": "67483e240003919c6dbf5e1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "batchrequest",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"a43-aM0kdmVH4YyNqUjmLuq6WapQQKA\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1Mjc0Njk3NiwiZXhwIjoxNzUyODMzMzc2fQ.wsAh4aLXS8R08UoY8xIxKTrC7W3bYgWJvre2bR2l2FA"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/batch-req-list?accessorId=67483e240003919c6dbf5e1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"batch-req-list"
+					],
+					"query": [
+						{
+							"key": "accessorId",
+							"value": "67483e240003919c6dbf5e1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MyProfile Copy",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "sessionactiveafter logout",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1MjQ5MjExOCwiZXhwIjoxNzUyNTc4NTE4fQ.Dbyr2NX9nR9_pRxStDaD5jCU-p4qADNVXQ8IDzS71l4"
+					},
+					{
+						"key": "Time-Zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "Access-Control-Allow-Origin",
+						"value": "*"
+					},
+					{
+						"key": "Referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/batch-req-list?accessorId=67483e240003919c6dbf5e1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"batch-req-list"
+					],
+					"query": [
+						{
+							"key": "accessorId",
+							"value": "67483e240003919c6dbf5e1b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "myrpofile-passwordchange",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"14f-Hd2DiR3QgvfHlra7OFVKozk8EcY\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1MjU1Mjc2OCwiZXhwIjoxNzUyNjM5MTY4fQ.tRUHSa-KaqA_8mBz4bSKtUkO_-QDXgqVfXruKJS1txY"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/getAssessor-profilePercentage/67483e240003919c6dbf5e1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"getAssessor-profilePercentage",
+						"67483e240003919c6dbf5e1b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dashboard",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"40f-8aTCDLQA0y5n+6Vn5Q/R0KKDWpc\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1Mjc0NjgwNywiZXhwIjoxNzUyODMzMjA3fQ.eARoZAVKx5V7cNdFD39HSrF3nOLVkvzgYYYCqyVKf8Y"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/getAssesor-profileList/67483e240003919c6dbf5e1b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"getAssesor-profileList",
+						"67483e240003919c6dbf5e1b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "batchdetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"7e6-oZnk/sK6ypi+uWGAFrNTzMQcDK4\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1Mjc0NjgwNywiZXhwIjoxNzUyODMzMjA3fQ.eARoZAVKx5V7cNdFD39HSrF3nOLVkvzgYYYCqyVKf8Y"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/batch-details/68660c3514158cb8074bb9b1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"batch-details",
+						"68660c3514158cb8074bb9b1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "vivapractical-marksheet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "access-control-allow-origin",
+						"value": "*"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "if-none-match",
+						"value": "W/\"7c-Ej47dbhNnB/NrZY8s6jwECI+zos\""
+					},
+					{
+						"key": "origin",
+						"value": "https://staging.assessor.testaonline.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://staging.assessor.testaonline.com/"
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "time-zone",
+						"value": "Asia/Kolkata"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImF2YW50aWthQHJhZGlhbnRpbmZvbmV0LmNvbSIsImlhdCI6MTc1Mjc0Njk3NiwiZXhwIjoxNzUyODMzMzc2fQ.wsAh4aLXS8R08UoY8xIxKTrC7W3bYgWJvre2bR2l2FA"
+					}
+				],
+				"url": {
+					"raw": "https://api.staging.assessor.testaonline.com/api/candidate-list-by-batch/68660c3514158cb8074bb9b1?section=viva",
+					"protocol": "https",
+					"host": [
+						"api",
+						"staging",
+						"assessor",
+						"testaonline",
+						"com"
+					],
+					"path": [
+						"api",
+						"candidate-list-by-batch",
+						"68660c3514158cb8074bb9b1"
+					],
+					"query": [
+						{
+							"key": "section",
+							"value": "viva"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
